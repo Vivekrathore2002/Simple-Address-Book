@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address Book Manager</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Address Book Manager</h1>
+	<div class="form-container">
+		<form id="contact-form">
+			<h2>Add Contact</h2>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="mobile">Mobile Number:</label>
+			<input type="tel" id="mobile" name="mobile" required>
+			<button type="submit">Add</button>
+		</form>
+	</div>
+	<div class="search-container">
+		<h2>Search Contacts</h2>
+		<label for="name-search">Name:</label>
+		<input type="text" id="name-search" name="name-search">
+		<label for="mobile-search">Mobile Number:</label>
+		<input type="tel" id="mobile-search" name="mobile-search">
+	</div>
+	<div class="contacts-container">
+		<h2>Contacts</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Mobile Number</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="contacts-list"></tbody>
+		</table>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
